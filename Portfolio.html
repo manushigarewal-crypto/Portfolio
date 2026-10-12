@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manushi Kaur | Data & Analytics Leader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        :root {
+            --primary: #1a4b8c;
+            --secondary: #2e8b8b;
+            --accent: #f59e0b;
+            --light: #f8fafc;
+            --dark: #1e293b;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        body {
+            background-color: #f0f4f8;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        header p.subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        .contact-bar a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+        .contact-bar a:hover {
+            border-bottom-color: white;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white !important;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-bottom: none !important;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(245,158,11,0.35);
+        }
+        section {
+            padding: 50px 20px;
+        }
+        h2 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+        }
+        .about-text {
+            font-size: 1.05rem;
+            max-width: 900px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .skill-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+        .skill-card h3 {
+            color: var(--secondary);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        .case-study {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--secondary);
+        }
+        .case-study h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+        .case-study .role {
+            color: var(--secondary);
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        .case-study ul {
+            padding-left: 20px;
+        }
+        .case-study li {
+            margin-bottom: 10px;
+        }
+        .metric {
+            font-weight: bold;
+            color: var(--accent);
+        }
+        .timeline-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        .timeline-table th, .timeline-table td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .timeline-table th {
+            background-color: var(--primary);
+            color: white;
+        }
+        .timeline-table tr:hover {
+            background-color: #f1f5f9;
+        }
+        .edu-item {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-bottom: 15px;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 20px;
+        }
+        footer .btn {
+            margin: 15px 10px;
+        }
+        @media (max-width: 768px) {
+            header { padding: 40px 15px; }
+            header h1 { font-size: 2rem; }
+            section { padding: 30px 15px; }
+            .case-study { padding: 20px; }
+            .contact-bar { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Manushi Kaur</h1>
+            <p class="subtitle">Data & Analytics Leader | Transforming Complex Data into Actionable Insights</p>
+            <div class="contact-bar">
+                <span>📧 <a href="mailto:kaurmanushi@gmail.com">kaurmanushi@gmail.com</a></span>
+                <span>📞 +44 07344018565</span>
+                <span>🔗 <a href="https://linkedin.com/in/manushi-kaur-b9848b15" target="_blank">LinkedIn</a></span>
+            </div>
+            <span class="badge">📍 Reading, UK | Right to Work: Skilled Worker Visa (Dependant) — No Sponsorship Required</span>
+            <br>
+            <a href="Manushi_Resume.pdf" download class="btn">📄 Download Resume</a>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>About Me</h2>
+        <p class="about-text">
+            I'm a data and analytics professional with <strong>18+ years</strong> of experience turning complex data into clear, actionable insights for senior leaders and product teams across <strong>Financial Services, Insurance, Healthcare, and Aviation</strong>. I design measurement frameworks, build scalable dashboards, run rigorous A/B tests, and lead analytics teams to drive revenue growth, reduce churn, and streamline operations. I use AI tools daily to accelerate analysis and improve documentation quality.<br><br>
+            <em>Core focus:</em> Translating business questions into analytical solutions • building trusted data foundations • telling stories that move decisions forward
+        </p>
+    </section>
+
+    <section class="container" style="background:white; border-radius:12px; margin:20px; padding:40px;">
+        <h2>Core Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Analytics</h3>
+                <p>SQL, BigQuery, ETL & Data Pipelines, Data Validation & Reconciliation, A/B Testing & Measurement, KPI Design, Customer Segmentation, Churn & Retention Analysis, Forecasting, Root-Cause Analysis</p>
+            </div>
+            <div class="skill-card">
+                <h3>Visualisation & Reporting</h3>
+                <p>Tableau, Power BI, Qlik, Data Studio, Excel, Executive Storytelling</p>
+            </div>
+            <div class="skill-card">
+                <h3>Platforms & Tools</h3>
+                <p>GCP, Salesforce, Jira, Confluence, Git, Lucidchart</p>
+            </div>
+            <div class="skill-card">
+                <h3>AI Productivity</h3>
+                <p>ChatGPT, Claude Code, Copilot — integrated daily to accelerate analysis & documentation</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Featured Case Studies</h2>
+
+        <div class="case-study">
+            <h3>Aviation: Driving Revenue & Conversion Through Experimentation</h3>
+            <p class="role">Manager, Data Analytics — AirAsia | Dec 2020 – Nov 2023</p>
+            <ul>
+                <li>Designed & executed <strong>20+ A/B tests</strong> → <span class="metric">~3% improvement in booking conversion</span></li>
+                <li>Led a team of 15 analysts → <span class="metric">~US$2M incremental revenue (~4% uplift)</span> & <span class="metric">~4% churn reduction</span></li>
+                <li>Built KPI frameworks & Tableau/Data Studio dashboards → <span class="metric">~40% increase in dashboard adoption</span> across 150+ business users</li>
+            </ul>
+        </div>
+
+        <div class="case-study">
+            <h3>Data Migration: Large-Scale Cleanse & Reconciliation</h3>
+            <p class="role">Technical BA / PM — Syscon Justice System | Dec 2023 – Sep 2023</p>
+            <ul>
+                <li>SQL-based cleansing → <span class="metric">90% reduction in data defects</span> (~600 → ~60)</li>
+                <li>Migrated <strong>~12M records</strong> from 4 legacy sources → <span class="metric">90% reconciliation accuracy</span></li>
+                <li>Translated 120+ business rules into technical specs; delivered go-live on schedule with zero critical post-launch defects</li>
+            </ul>
+        </div>
+
+        <div class="case-study">
+            <h3>Insurance: Real-Time Performance Visibility</h3>
+            <p class="role">Data Analysis Manager — Allianz | Jan 2019 – Nov 2020</p>
+            <ul>
+                <li>Built real-time Tableau dashboards for <strong>20+ life insurance KPIs</strong>, presented monthly to global HQ</li>
+                <li>Supported 3 digital applications → <span class="metric">~25% reduction in policy onboarding time</span></li>
+                <li>Standardised SOPs → <span class="metric">~30% faster onboarding for new team members</span></li>
+            </ul>
+        </div>
+
+        <div class="case-study">
+            <h3>Healthcare: Reporting Automation & Accuracy</h3>
+            <p class="role">Deputy Manager, BI — WNS Global Services | Jan 2015 – Dec 2018</p>
+            <ul>
+                <li>Delivered 25+ Qlik/Power BI reports → <span class="metric">~30% less manual effort</span> & <span class="metric">97% reporting accuracy</span></li>
+                <li>Designed incentive dashboards serving <strong>200+ sales reps</strong> for GSK</li>
+                <li>Automated invoice delivery → <span class="metric">~80% reduction in manual effort</span></li>
+            </ul>
+        </div>
+
+        <div class="case-study">
+            <h3>Financial Services: Fraud Detection Optimisation</h3>
+            <p class="role">Business Analyst — Genpact | Jun 2008 – Dec 2014</p>
+            <ul>
+                <li>Process & trend analysis → <span class="metric">~10% stronger fraud detection</span> (fewer false positives)</li>
+                <li>Requirements & spec improvements → <span class="metric">~20% faster turnaround times</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Professional Timeline</h2>
+        <table class="timeline-table">
+            <thead>
+                <tr>
+                    <th>Period</th>
+                    <th>Role</th>
+                    <th>Company</th>
+                    <th>Industry</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dec 2023 – Sep 2023</td>
+                    <td>Technical BA / PM (Data Migration)</td>
+                    <td>Syscon Justice System</td>
+                    <td>Public Sector</td>
+                </tr>
+                <tr>
+                    <td>Dec 2020 – Nov 2023</td>
+                    <td>Manager, Data Analytics</td>
+                    <td>AirAsia</td>
+                    <td>Aviation</td>
+                </tr>
+                <tr>
+                    <td>Jan 2019 – Nov 2020</td>
+                    <td>Data Analysis Manager</td>
+                    <td>Allianz</td>
+                    <td>Insurance</td>
+                </tr>
+                <tr>
+                    <td>Jan 2015 – Dec 2018</td>
+                    <td>Deputy Manager, BI</td>
+                    <td>WNS Global Services</td>
+                    <td>Healthcare</td>
+                </tr>
+                <tr>
+                    <td>Jun 2008 – Dec 2014</td>
+                    <td>Business Analyst</td>
+                    <td>Genpact</td>
+                    <td>Financial Services</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="container">
+        <h2>Education</h2>
+        <div class="edu-item">
+            <h3>MBA in Business Analytics</h3>
+            <p>Great Lakes Institute of Management | 2018 | Grade: 90%</p>
+        </div>
+        <div class="edu-item">
+            <h3>B.E. in Electronics & Communication Engineering</h3>
+            <p>Maharishi Dayanand University | 2008 | Grade: 70%</p>
+        </div>
+    </section>
+
+    <footer>
+        <h2 style="color:white; border-bottom-color:var(--accent);">Get In Touch</h2>
+        <p style="margin-bottom:15px;">I'm actively pursuing Data Analytics, Business Intelligence & Leadership roles across the UK.</p>
+        <a href="Manushi_Resume.pdf" download class="btn">📄 Download Resume</a>
+        <a href="https://linkedin.com/in/manushi-kaur-b9848b15" target="_blank" class="btn" style="background:#0077b5;">💼 Connect on LinkedIn</a>
+        <a href="mailto:kaurmanushi@gmail.com" class="btn" style="background:#10b981;">✉️ Email Me</a>
+        <p style="margin-top:25px; font-size:0.85rem; opacity:0.7;">© 2026 Manushi Kaur. All rights reserved.</p>
+    </footer>
+</body>
+</html>
